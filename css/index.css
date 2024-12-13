@@ -30,6 +30,8 @@ svg{
 body{
     font-family: Arial, Helvetica, sans-serif;
     hyphens: auto;
+    background: linear-gradient(180deg, rgba(230,176,255,1) 0%, rgba(119,22,163,1) 100%);
+
 }
 h1 , h2 , h3 , h4 , h5 , h6{
     font-size: inherit;
@@ -37,13 +39,15 @@ h1 , h2 , h3 , h4 , h5 , h6{
 }
 .Header{
     width: 100%;
-    background-color: aqua;
+    top: 0;
+    left: 0;
+    background:rgba(230,176,255,1);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.438);
+
 }
 .Header-wrap{
-    background-color: lawngreen;
-    padding: 0px 15px;
-    min-height: 80px;
-
+    height: 80px;
+    padding: 0px 25px;
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
@@ -52,30 +56,31 @@ h1 , h2 , h3 , h4 , h5 , h6{
 }
 .Header-h1{
     font-size: 2em;
-    background-color: plum;
 }
 .Header-ul{
-    background-color: red;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
 }
 .Header-li{
-    padding: 5px;
-    background-color: paleturquoise;
+    padding: 15px;
+    text-align: center;
 }
 .Header-li:hover{
-    color: white;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.253);
 }
 .Main{
+    height: calc(100vh - 85px);
     width: 100%;
-    background-color: plum;
+    background: linear-gradient(180deg, rgba(230,176,255,1) 0%, rgba(119,22,163,1) 100%);
+    display: flex;
+    flex-flow: column nowrap;
+
 }
 .Main-section{
+    height: 100%;
     width: 95%;
-    min-height: 400px;
     margin: auto;
 }
 .Hero{
@@ -114,45 +119,51 @@ h1 , h2 , h3 , h4 , h5 , h6{
 }
 .Contacto{
     padding: 20px 20px;
-    background-color: coral;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     position: relative;
+    color: white;
 }
 .Contacto-h3{
+    text-align: center;
+    width: 100%;
     text-transform: uppercase;
-    background-color: darkgreen;
-    position: absolute;
     top: 20px;
     left: calc(50% - width);
     font-size: 2em;
 }
 .Contacto-wrapper{
     width: 50%;
+    min-height: 200px;
     padding: 15px;
-    background-color: aqua;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
+}
+.Contacto-wrapper:hover{
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.253);
+
 }
 .Contacto-email{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 .Contacto-h4{
-    font-size: 1.4em;
+    font-size: 1.6em;
+}
+.Contacto-a{
+    font-size: 1.6em;
 }
 .Redes{
     width: 50%;
     max-width: 300px;
-    background-color: brown;
 }
 .Redes-ul{
     display: flex;
@@ -160,13 +171,25 @@ h1 , h2 , h3 , h4 , h5 , h6{
     justify-content: space-around;
     align-items: center;
 }
-.Contacto-repre{
-    background-color: rgb(206, 173, 236);
+.Redes-li{
+    padding: 5px;
+    width: 40px;
+}
+.Repre{
+    gap: 20px;
+}
+.Repre-h4{
+    font-size: 1.6em;
+}
+.Repre-wrap{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+}
+.Repre-h5{
+    width: 50%;
 }
 
 
