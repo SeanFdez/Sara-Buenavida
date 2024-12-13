@@ -69,6 +69,9 @@ h1 , h2 , h3 , h4 , h5 , h6{
 .Header-li:hover{
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.253);
 }
+.Header-boton{
+    display: none;
+}
 .Main{
     height: calc(100vh - 85px);
     width: 100%;
@@ -128,7 +131,6 @@ h1 , h2 , h3 , h4 , h5 , h6{
     text-align: center;
     width: 100%;
     text-transform: uppercase;
-    top: 20px;
     left: calc(50% - width);
     font-size: 2em;
 }
@@ -188,6 +190,34 @@ h1 , h2 , h3 , h4 , h5 , h6{
 }
 .Repre-h5{
     width: 50%;
+}
+.Repre-a{
+    font-size: 1.6em;
+}
+@media (max-width:800px){
+    .Main{
+        height: 100%
+
+    }
+    .Contacto{
+        padding: 20px 20px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+    }
+    .Contacto-wrapper{
+        width: 100%;
+        min-height: 200px;
+        padding: 15px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: center;
+        gap: 50px;
+    }
 }
 
 
