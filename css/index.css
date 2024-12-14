@@ -72,6 +72,9 @@ h1 , h2 , h3 , h4 , h5 , h6{
 .Header-boton{
     display: none;
 }
+.Header-ul--boton{
+    display: none;
+}
 .Main{
     height: calc(100vh - 85px);
     width: 100%;
@@ -199,8 +202,46 @@ h1 , h2 , h3 , h4 , h5 , h6{
         height: 100%
 
     }
+    .Header-boton{
+        display: block;
+        width: 40px;
+        position: relative;
+    }
+    .Boton-ul{
+        display: none;
+    }
+    .Boton-ul.Activo{
+        background-color: rgba(0, 0, 0, 0.514);
+        color: white;
+        width: 100px;
+        position: absolute;
+        top: 50px;
+        left: -50px;
+        z-index: 2;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .Boton-li{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .Boton-li:hover{
+        background-color: blueviolet;
+    }
+    .Hero-h2{
+        font-size: 1.6em;
+    }
+    .Header-menu{
+        display: none;
+    }
     .Contacto{
-        padding: 20px 20px;
+        margin-top: 20px;
+        padding: 0px 0px;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
@@ -209,6 +250,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
         color: white;
     }
     .Contacto-wrapper{
+        margin-top: 20px;
         width: 100%;
         min-height: 200px;
         padding: 15px;
@@ -216,7 +258,14 @@ h1 , h2 , h3 , h4 , h5 , h6{
         flex-flow: column nowrap;
         justify-content: start;
         align-items: center;
-        gap: 50px;
+        gap: 20px;
+    }
+    .Contacto-a{
+        font-size: 1.2em;
+    }
+
+    .Repre-a{
+        font-size: 1.2em;
     }
 }
 
