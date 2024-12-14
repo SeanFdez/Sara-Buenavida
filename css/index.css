@@ -42,7 +42,6 @@ h1 , h2 , h3 , h4 , h5 , h6{
     top: 0;
     left: 0;
     border-bottom: 5px solid rgba(0, 0, 0, 0.438);
-
 }
 .Header-wrap{
     height: 80px;
@@ -80,7 +79,6 @@ h1 , h2 , h3 , h4 , h5 , h6{
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-
 }
 .Main-section{
     height: 100%;
@@ -108,7 +106,6 @@ h1 , h2 , h3 , h4 , h5 , h6{
     align-items: center;
     gap: 20px;
     z-index: 1;
-
     color: white;
 }
 .Hero-img{
@@ -147,10 +144,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     align-items: center;
     gap: 50px;
 }
-.Contacto-wrapper:hover{
-    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.253);
 
-}
 .Contacto-email{
     display: flex;
     flex-flow: column nowrap;
@@ -160,6 +154,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
 }
 .Contacto-h4{
     font-size: 1.6em;
+    color: rgb(255, 195, 255);
 }
 .Contacto-a{
     font-size: 1.6em;
@@ -173,18 +168,13 @@ h1 , h2 , h3 , h4 , h5 , h6{
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+    color: rgb(255, 195, 255);
 }
 .Redes-li{
     padding: 5px;
     width: 40px;
 }
 .Repre{
-    gap: 20px;
-}
-.Repre-h4{
-    font-size: 1.6em;
-}
-.Repre-wrap{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -197,11 +187,37 @@ h1 , h2 , h3 , h4 , h5 , h6{
 .Repre-a{
     font-size: 1.6em;
 }
-@media (max-width:800px){
+.Footer{
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-size: .7em;
+    padding: 3px;
+}
+@media (max-width:900px){
     .Main{
         height: 100%
-
     }
+    .Contacto{
+        margin-top: 20px;
+        padding: 0px 0px;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .Contacto-wrapper{
+        width: 100%;
+        min-height: 150px;
+        padding: 15px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+    }
+}
+@media (max-width:750px){
     .Header-boton{
         display: block;
         width: 40px;
@@ -233,39 +249,23 @@ h1 , h2 , h3 , h4 , h5 , h6{
     .Boton-li:hover{
         background-color: blueviolet;
     }
-    .Hero-h2{
-        font-size: 1.6em;
-    }
     .Header-menu{
         display: none;
     }
-    .Contacto{
-        margin-top: 20px;
-        padding: 0px 0px;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        color: white;
+    
+}
+@media (max-width:450px){
+    .Header-h1{
+        font-size: 1.8em;
     }
-    .Contacto-wrapper{
-        margin-top: 20px;
-        width: 100%;
-        min-height: 200px;
-        padding: 15px;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: start;
-        align-items: center;
-        gap: 20px;
+    .Hero-h2{
+        font-size: 1.4em;
     }
     .Contacto-a{
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
-
-    .Repre-a{
-        font-size: 1.2em;
+    .Footer{
+        font-size: 0.5em;
     }
 }
 
