@@ -52,8 +52,8 @@ h1 , h2 , h3 , h4 , h5 , h6{
     justify-content: space-between;
     align-items: center;
 }
-.Header-h1{
-    font-size: 2em;
+.Logo{
+    width: 150px;
 }
 .Header-ul{
     display: flex;
@@ -115,6 +115,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     filter: grayscale(0.5);
 }
 .Hero-h2{
+    font-family: "Lobster Two", serif;
     font-size: 2em;
     font-weight: bold;
 }
@@ -133,6 +134,9 @@ h1 , h2 , h3 , h4 , h5 , h6{
     text-transform: uppercase;
     left: calc(50% - width);
     font-size: 2em;
+    font-family: "Lobster Two", serif;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 .Contacto-wrapper{
     width: 50%;
@@ -153,8 +157,9 @@ h1 , h2 , h3 , h4 , h5 , h6{
     gap: 20px;
 }
 .Contacto-h4{
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: rgb(255, 195, 255);
+    font-family: "Lobster Two", serif;
 }
 .Contacto-a{
     font-size: 1.6em;
