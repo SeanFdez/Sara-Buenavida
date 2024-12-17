@@ -125,8 +125,8 @@ h1 , h2 , h3 , h4 , h5 , h6{
     flex-flow: row wrap;
     justify-content: center;
     align-items: start;
-    position: relative;
     color: white;
+    gap: 30px;
 }
 .Contacto-h3{
     text-align: center;
@@ -137,43 +137,33 @@ h1 , h2 , h3 , h4 , h5 , h6{
     letter-spacing: 2px;
 }
 .Contacto-wrapper{
-    width: 50%;
-    min-height: 250px;
-    padding: 15px;
+    width: calc(100% / 3);
+    min-height: 150px;
+    padding: 15px 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-}
+    gap: 10px;
 
+}
 .Contacto-h4{
     font-size: 1.8em;
-    font-weight: 400;
+    font-weight: 600;
 }
 .Contacto-a{
-    font-size: 1.6em;
-    font-weight: 300;
+    font-size: 1.5em;
+    font-weight: 400;
 }
-.Redes{
+.Contacto-insta{
     width: 50%;
-    max-width: 300px;
-}
-.Redes-ul{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-}
-.Redes-li{
-    padding: 5px;
-    width: 40px;
+    max-width: 60px;
 }
 .Contacto-h5{
-    width: 50%;
+    width: 70%;
     max-width: 300px;
+    background-color: aqua;
 }
-
 .Footer{
     background-color: black;
     width: 100%;
