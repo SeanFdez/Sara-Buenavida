@@ -242,15 +242,12 @@ h1 , h2 , h3 , h4 , h5 , h6{
         position: relative;
     }
     .Boton-ul{
-        display: none;
-    }
-    .Boton-ul.Activo{
         background-color: rgba(0, 0, 0, 0.614);
         color: white;
         width: 100px;
         position: absolute;
         top: 50px;
-        left: -50px;
+        left: 100px;
         z-index: 2;
 
         display: flex;
@@ -258,19 +255,28 @@ h1 , h2 , h3 , h4 , h5 , h6{
         justify-content: center;
         align-items: center;
         gap: 5px;
+
+        transition: all .5s ease;
+
+    }
+    .Boton-ul.Activo{
+        left: -50px;
     }
     .Boton-li{
+        font-family: "Bitter";
         width: 100%;
         padding: 10px;
         text-align: center;
+
+        transition: background-color .5s ease;
     }
     .Boton-li:hover{
-        background-color: blueviolet;
+
+        background-color: var(--intenso);
     }
     .Header-menu{
         display: none;
     }
-    
 }
 @media (max-width:450px){
     .Hero{
