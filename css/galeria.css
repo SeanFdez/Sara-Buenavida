@@ -114,85 +114,6 @@ h1 , h2 , h3 , h4 , h5 , h6{
 .Header-ul--boton{
     display: none;
 }
-.Main{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-}
-.Main-section{
-    width: 100%;
-    margin: auto;
-}
-.Hero{
-    min-height: 350px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: var(--blanco);
-    gap: 20px;
-}
-.Hero-h2{
-    width: 50%;
-    max-width: 500px;
-}
-.Hero-h3{
-    font-size: 1.5em;
-    font-weight: 300;
-}
-.Contacto{
-    margin: 20px auto;
-    padding: 20px 20px;
-    min-height: 500px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: start;
-    color: var(--blanco);
-    gap: 30px;
-}
-.Contacto-h3{
-    text-align: center;
-    width: 100%;
-    text-transform: uppercase;
-    font-size: 2em;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-.Contacto-wrapper{
-    width: calc(100% / 3);
-    min-height: 150px;
-    padding: 15px 0;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-
-}
-.Contacto-h4{
-    font-size: 1.8em;
-    font-weight: 600;
-}
-.Contacto-a{
-    font-size: 1.5em;
-    font-weight: 400;
-    transition: color .3s ease;
-}
-.Contacto-a:hover{
-    color: var(--claro);
-}
-.Contacto-insta{
-    width: 50%;
-    max-width: 60px;
-}
-.Contacto-h5{
-    width: 70%;
-    max-width: 300px;
-}
 .Footer{
     background-color: var(--negro);
     width: 100%;
@@ -205,27 +126,6 @@ h1 , h2 , h3 , h4 , h5 , h6{
     .Main{
         height: 100%
     }
-    .Hero-h2{
-        width: 80%
-    }
-    .Contacto{
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        gap: 20px;
-    }
-    .Contacto-wrapper{
-        width: 100%;
-        min-height: 150px;
-        padding: 15px;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-
 }
 @media (max-width:750px){
     .Fondo-img{
@@ -281,21 +181,10 @@ h1 , h2 , h3 , h4 , h5 , h6{
     }
 }
 @media (max-width:450px){
-    .Hero{
-        height: 450px;
-    }
     .Header-h1{
         font-size: 1.8em;
-    }
-    .Hero-h2{
-        font-size: 1.4em;
-    }
-    .Contacto-a{
-        font-size: 1.1em;
     }
     .Footer{
         font-size: 0.5em;
     }
 }
-
-
