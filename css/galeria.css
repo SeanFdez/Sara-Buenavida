@@ -56,7 +56,6 @@ h1 , h2 , h3 , h4 , h5 , h6{
     width: 100%;
     max-width: 800px;
     object-fit: cover;
-    position: relative;
     opacity: 0.2;
 }
 
@@ -113,6 +112,99 @@ h1 , h2 , h3 , h4 , h5 , h6{
 }
 .Header-ul--boton{
     display: none;
+}
+.Main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+.Main-titulo{
+    margin: auto;
+    font-size: 2.5rem;
+}
+.Main-section{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Fotos-h3{
+    margin: 10px;
+}
+.Fotos-ul{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 200px;
+    gap: 10px;
+}
+.Fotos-li{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.Fotos-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: top;
+    scale: 1.1;
+}
+.Fotos-li--izq{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.Fotos-li--der{
+    grid-column: 5/6;
+    grid-row: 1/3;
+}
+
+.Lightbox{
+    position: fixed;
+    background-color: rgba(41, 41, 41, 0.692);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    opacity: 0;
+    pointer-events: none;
+    
+    transition: all .5s ease;
+}
+.Lightbox.Active{
+    opacity: 1;
+    pointer-events: all;
+}
+.Lightbox-button{
+    background-color: transparent;
+    width: 60px;
+    color: white;
+}
+
+.Lightbox-img{
+    width: 90%;
+    height: 90vh;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 25px;
 }
 .Footer{
     background-color: var(--negro);
