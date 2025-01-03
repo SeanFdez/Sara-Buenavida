@@ -164,7 +164,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     position: relative;
     overflow: hidden;
 }
@@ -249,28 +249,13 @@ h1 , h2 , h3 , h4 , h5 , h6{
         display: none;
     }
     .Main-wrap.Activo{
-        max-height: 1500px;
-    }
-    .Main-wrap{
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 300px;
-        padding: 10px;
-        max-height: 0px;
-        gap: 20px;
-        overflow: hidden;    
-        min-height: 0px;
-        transition: max-height .5s ease;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 }
-@media (max-width:450px){
-    .Hero{
-        height: 450px;
-    }
+@media (max-width:480px){
     .Header-h1{
         font-size: 1.8em;
-    }
-    .Hero-h2{
-        font-size: 1.4em;
     }
     .Contacto-a{
         font-size: 1.1em;
