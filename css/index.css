@@ -24,16 +24,24 @@ svg{
     fill: currentColor;
 }
 :root{
+    /* Aqui van los diferentes colores de la web */
     font-size: 100%;
     scroll-behavior: smooth;
+    /* Este es el color mas claro */
     --claro: rgb(221, 152, 253);
+    /* Este es el color de fondo */
     --fondo: rgb(122, 76, 143);
+    /* Este es el mas oscuro, sirve para las cabeceras */
     --oscuro: rgb(83, 43, 104);
+    /* Este es el blanco, se usa principalmente en el index o en detalles */
     --blanco: rgb(255, 255, 255);
+    /* Este es el negro, se usa para los textos */
     --negro: rgb(0, 0, 0);
+    /* Este es el mas intenso, se usa para los detalles o cuando se hace hover para enfatizar */
     --intenso: rgb(135, 5, 196);
 }
 body{
+    /* Esta es la tipografia utilizada */
     font-family: "Bitter", serif;
     hyphens: auto;
     position: relative;
@@ -43,6 +51,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     font-weight: inherit;
 }
 .Fondo{
+    /* Pongo el fondo en fixed y con un gradiente para que no sea un fondo simple */
     position: fixed;
     width: 100%;
     height: 100%;
@@ -53,22 +62,23 @@ h1 , h2 , h3 , h4 , h5 , h6{
     pointer-events: none;
 
 }
+/* Añado la imagen del fondo  para que esté siempre en la esquina*/
 .Fondo-img{
     width: 100%;
-    max-width: 800px;
+    max-width: 50rem;
     object-fit: cover;
     position: relative;
     opacity: 0.2;
 }
-
+/* Aqui va el header */
 .Header{
     width: 100%;
     top: 0;
     left: 0;
 }
 .Header-wrap{
-    padding:25px;
-    height: 90px;
+    padding:1.5625rem;
+    height: 5.625rem;
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
@@ -76,7 +86,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     align-items: center;
 }
 .Logo{
-    width: 150px;
+    width: 9.375rem;
 }
 .Header-ul{
     display: flex;
@@ -85,21 +95,20 @@ h1 , h2 , h3 , h4 , h5 , h6{
     align-items: center;
 }
 .Header-li{
-    padding: 15px;
+    padding: .9375rem;
     text-align: center;
-    transition: all .3s ease;
+    transition: color .3s ease;
     position: relative;
 }
+/* Aqui añado la linea que aparece debajo de los enlaces del header cuando haces hover y el efecto. */
 .Header-li::before{
     content: "";
     width: 0%;
-    height: 2px;
+    height: .125rem;
     background-color: var(--intenso);
     position: absolute;
-    bottom: 10px;
+    bottom: .625rem;
     left: 0;
-    border-radius: 15%;
-
     transition: width .3s ease;
 
 }
@@ -126,34 +135,36 @@ h1 , h2 , h3 , h4 , h5 , h6{
     width: 100%;
     margin: auto;
 }
+/* Aqui añado las caracteristicas del hero, el elemento mas importante */
 .Hero{
-    min-height: 350px;
+    min-height: 21.875rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     position: relative;
     color: var(--blanco);
-    gap: 20px;
+    gap: 1.25rem;
 }
 .Hero-h2{
     width: 50%;
-    max-width: 500px;
+    max-width: 31.25rem;
 }
 .Hero-h3{
     font-size: 1.5em;
     font-weight: 300;
 }
+/* Los tres elementos comparten clase, por lo que con unas pocas lineas de CSS ya están todos estilizados */
 .Contacto{
-    margin: 20px auto;
-    padding: 20px 20px;
-    min-height: 500px;
+    margin: 1.25rem auto;
+    padding: 1.25rem 1.25rem;
+    min-height: 31.25rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: start;
     color: var(--blanco);
-    gap: 30px;
+    gap: 1.875rem;
 }
 .Contacto-h3{
     text-align: center;
@@ -161,17 +172,17 @@ h1 , h2 , h3 , h4 , h5 , h6{
     text-transform: uppercase;
     font-size: 2em;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: .125rem;
 }
 .Contacto-wrapper{
     width: calc(100% / 3);
-    min-height: 150px;
-    padding: 15px 0;
+    min-height: 9.375rem;
+    padding: .9375rem 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: .625rem;
 
 }
 .Contacto-h4{
@@ -188,20 +199,21 @@ h1 , h2 , h3 , h4 , h5 , h6{
 }
 .Contacto-insta{
     width: 50%;
-    max-width: 60px;
+    max-width: 3.75rem;
 }
 .Contacto-h5{
     width: 70%;
-    max-width: 300px;
+    max-width: 18.75rem;
 }
 .Footer{
     background-color: var(--negro);
     width: 100%;
     color: var(--blanco);
     font-size: .7em;
-    padding: 3px;
+    padding: .1875rem;
     z-index: -1;
 }
+/* Aqui va el responsive para tablets o portatiles, */
 @media (max-width:900px){
     .Main{
         height: 100%
@@ -214,42 +226,43 @@ h1 , h2 , h3 , h4 , h5 , h6{
         justify-content: center;
         align-items: center;
         position: relative;
-        gap: 20px;
+        gap: 1.25rem;
     }
     .Contacto-wrapper{
         width: 100%;
-        min-height: 150px;
-        padding: 15px;
+        min-height: 9.375rem;
+        padding: .9375rem;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
         align-items: center;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
 }
+/* Este es el responsive del menu del header para moviles grandes o tablets pequeñas */
 @media (max-width:750px){
     .Fondo-img{
-        width: 800px;
+        width: 50rem;
         object-fit: cover;
         position: relative;
-        right: 100px;
+        right: 6.25rem;
         opacity: 0.2;
     }
 
     .Header-boton{
         display: block;
-        width: 40px;
+        width: 2.5rem;
         position: relative;
     }
     .Boton-ul{
         background-color: rgba(0, 0, 0, 0.614);
         color: white;
-        width: 100px;
-        height: 0px;
+        width: 6.25rem;
+        height: 0rem;
         position: absolute;
-        top: 50px;
-        left: -50px;
+        top: 3.125rem;
+        left: -3.125rem;
         z-index: 2;
         overflow: hidden;
 
@@ -258,17 +271,16 @@ h1 , h2 , h3 , h4 , h5 , h6{
         justify-content: center;
         align-items: center;
 
-        transition: all .5s ease;
+        transition: height .5s ease;
 
     }
     .Boton-ul.Activo{
-        height: 210px;
+        height: 13.125rem;
     }
     .Boton-li{
-        font-family: "Bitter";
         width: 100%;
-        height: calc(210px / 5);
-        padding: 10px;
+        height: calc(13.125rem / 5);
+        padding: .625rem;
         text-align: center;
 
         transition: background-color .5s ease;
@@ -281,9 +293,10 @@ h1 , h2 , h3 , h4 , h5 , h6{
         display: none;
     }
 }
+/* Aqui adapto para los moviles pequeños */
 @media (max-width:450px){
     .Hero{
-        height: 450px;
+        height: 28.125rem;
     }
     .Header-h1{
         font-size: 1.8em;

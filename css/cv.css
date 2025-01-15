@@ -55,7 +55,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
 }
 .Fondo-img{
     width: 100%;
-    max-width: 800px;
+    max-width: 50rem;
     object-fit: cover;
     position: relative;
     opacity: 0.2;
@@ -67,8 +67,8 @@ h1 , h2 , h3 , h4 , h5 , h6{
     left: 0;
 }
 .Header-wrap{
-    padding:25px;
-    height: 90px;
+    padding:1.5625rem;
+    height: 5.625rem;
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
@@ -76,7 +76,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     align-items: center;
 }
 .Logo{
-    width: 150px;
+    width: 9.375rem;
 }
 .Header-ul{
     display: flex;
@@ -85,7 +85,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     align-items: center;
 }
 .Header-li{
-    padding: 15px;
+    padding: .9375rem;
     text-align: center;
     transition: all .3s ease;
     position: relative;
@@ -93,10 +93,10 @@ h1 , h2 , h3 , h4 , h5 , h6{
 .Header-li::before{
     content: "";
     width: 0%;
-    height: 2px;
+    height: .125rem;
     background-color: var(--intenso);
     position: absolute;
-    bottom: 10px;
+    bottom: .625rem;
     left: 0;
     border-radius: 15%;
 
@@ -125,39 +125,41 @@ h1 , h2 , h3 , h4 , h5 , h6{
 
 }
 .Main-h2{
-    margin: 20px;
+    margin: 1.25rem;
     font-size: 2rem;
     font-weight: 600;
     color: var(--oscuro);
 }
 .Main-section{
     width: 90%;
-    margin: 20px auto;
+    margin: 1.25rem auto;
 }
 .Main-titulo{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 .Main-h3{
     font-size: 1.5em;
     font-weight: 300;
 }
 .Main-svg{
-    max-width: 30px;
+    max-width: 1.875rem;
     color: var(--negro);
     transition: transform .3s ease;
 }
+/* Cada sección tiene un grid para organizar los diferentes articles. En estado inactivo las filas no se ven y el overflow está hidden. */
 .Main-wrap{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 0fr);
-    gap: 20px;
+    gap: 1.25rem;
     overflow: hidden;    
-    transition: all .5s ease;
+    transition: grid-template-rows .5s ease;
 }
+/* Cuando se le añade la clase Activo, se le da altura a las filas */
 .Main-wrap.Activo{
     grid-template-rows: repeat(3, 1fr);
 }
@@ -169,32 +171,33 @@ h1 , h2 , h3 , h4 , h5 , h6{
     position: relative;
     overflow: hidden;
 }
+/* Añado una barra blanca de separación de los diferentes elementos del grid */
 .Main-article::after{
     content: "";
     width: 80%;
     background-color: var(--intenso);
-    border: 1px solid var(--blanco);
+    border: .0625rem solid var(--blanco);
     position: absolute;
-    bottom: 0px;
+    bottom: 0rem;
 }
 
 .Main-h4{
-    padding: 15px 0px;
+    padding: .9375rem 0rem;
     font-weight: 600;
     font-size: 1.1rem;
 }
 .Main-p{
     font-size: 1.1rem;
-    padding: 15px 0px;
+    padding: .9375rem 0rem;
 }
 .Footer{
     background-color: var(--negro);
     width: 100%;
     color: var(--blanco);
     font-size: .7em;
-    padding: 3px;
-    z-index: -1;
+    padding: .1875rem;
 }
+
 @media (max-width:900px){
     .Main{
         height: 100%
@@ -205,20 +208,21 @@ h1 , h2 , h3 , h4 , h5 , h6{
 
 
 }
+/* Para dispositivos moviles, el grid pasa a ser solo una columna en lugar de tres. */
 @media (max-width:750px){
     .Header-boton{
         display: block;
-        width: 40px;
+        width: 2.5rem;
         position: relative;
     }
     .Boton-ul{
         background-color: rgba(0, 0, 0, 0.614);
-        color: white;
-        width: 100px;
-        height: 0px;
+        color: var(--blanco);
+        width: 6.25rem;
+        height: 0rem;
         position: absolute;
-        top: 50px;
-        left: -50px;
+        top: 3.125rem;
+        left: -3.125rem;
         z-index: 2;
         overflow: hidden;
 
@@ -227,23 +231,22 @@ h1 , h2 , h3 , h4 , h5 , h6{
         justify-content: center;
         align-items: center;
 
-        transition: all .5s ease;
+        transition: height .5s ease;
 
     }
     .Boton-ul.Activo{
-        height: 210px;
+        height: 13.125rem;
     }
     .Boton-li{
         font-family: "Bitter";
         width: 100%;
-        height: calc(210px / 5);
-        padding: 10px;
+        height: calc(13.125rem / 5);
+        padding: .625rem;
         text-align: center;
 
         transition: background-color .5s ease;
     }
     .Boton-li:hover{
-
         background-color: var(--intenso);
     }
     .Header-menu{

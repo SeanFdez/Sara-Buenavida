@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sara Buenavida</title>
+    <meta name="title" content="Sara Buenavida" />
+    <meta name="description" content="Web de Sara Buenavida. Actriz y cantante." />
     <link rel="stylesheet" href="css/galeria.css">
     <script src="js/galeria.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,10 +18,6 @@
 </head>
 <body>
     <div class="Fondo">
-        <div class="Fondo-izquierda">
-            <img src="assets/Sarafondo.png" alt="" class="Fondo-img">
-        </div>
-
     </div>
     <header class="Header">
         <div class="Header-wrap">
@@ -43,7 +41,7 @@
                   </svg>
                 </a>
             </h1>
-            <div class="Header-menu">
+            <nav class="Header-menu">
                 <ul class="Header-ul">
                     <li class="Header-li"><a href="galeria.html" class="Header-a">Fotos</a></li>
                     <li class="Header-li"><a href="videos.html" class="Header-a">Videos</a></li>
@@ -51,7 +49,7 @@
                     <li class="Header-li"><a href="CV.html" class="Header-a">CV</a></li>
                     <li class="Header-li"><a href="prensa.html" class="Header-a">Prensa</a></li>
                 </ul>
-            </div>
+            </nav>
             <div class="Header-boton Boton">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Header-svg" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -67,50 +65,51 @@
         </div>
     </header>
     <main class="Main">
+        <!-- Aqui creo la galria, repitiendo siempre el mismo patron de un grid con 10 fotos y dos de ellas ocupando un espacio doble-->
         <h2 class="Main-h2">Galeria</h2>
         <section class="Main-section Fotos">
             <h3 class="Fotos-h3">Book</h3>
             <ul class="Fotos-ul">
-                <li class="Fotos-li "><img src="assets/book/1.jpg" alt="Foto del book" class="Fotos-img"></li>
-                <li class="Fotos-li"><img src="assets/book/2.jpg" alt="Foto del book" class="Fotos-img"></li>
-                <li class="Fotos-li"><img src="assets/book/4.jpg" alt="Foto del book" class="Fotos-img"></li>
-                <li class="Fotos-li"><img src="assets/book/5.jpg" alt="Foto del book" class="Fotos-img"></li>
-                <li class="Fotos-li"><img src="assets/book/6.jpg" alt="Foto del book" class="Fotos-img"></li>
-                <li class="Fotos-li"><img src="assets/book/9.jpg" alt="Foto del book" class="Fotos-img"></li>
-                <li class="Fotos-li"><img src="assets/book/10.webp" alt="Foto del book" class="Fotos-img"></li>
-                <li class="Fotos-li"><img src="assets/book/11.webp" alt="Foto del book" class="Fotos-img"></li>
-                <li class="Fotos-li Fotos-li--izq"><img src="assets/book/8.jpg" alt="Foto del book" class="Fotos-img"></li>
-                <li class="Fotos-li Fotos-li--der"><img src="assets/book/12.webp" alt="Foto del book" class="Fotos-img"></li>
+                <li class="Fotos-li "><img src="assets/book/1.jpg" alt="Foto del book" class="Fotos-img" loading="lazy"></li>
+                <li class="Fotos-li"><img src="assets/book/2.jpg" alt="Foto del book" class="Fotos-img" loading="lazy"></li>
+                <li class="Fotos-li"><img src="assets/book/4.jpg" alt="Foto del book" class="Fotos-img" loading="lazy"></li>
+                <li class="Fotos-li"><img src="assets/book/5.jpg" alt="Foto del book" class="Fotos-img" loading="lazy"></li>
+                <li class="Fotos-li"><img src="assets/book/6.jpg" alt="Foto del book" class="Fotos-img" loading="lazy"></li>
+                <li class="Fotos-li"><img src="assets/book/9.jpg" alt="Foto del book" class="Fotos-img" loading="lazy"></li>
+                <li class="Fotos-li"><img src="assets/book/10.webp" alt="Foto del book" class="Fotos-img" loading="lazy"></li>
+                <li class="Fotos-li"><img src="assets/book/11.webp" alt="Foto del book" class="Fotos-img" loading="lazy"></li>
+                <li class="Fotos-li Fotos-li--izq"><img src="assets/book/8.jpg" alt="Foto del book" class="Fotos-img" loading="lazy"></li>
+                <li class="Fotos-li Fotos-li--der"><img src="assets/book/12.webp" alt="Foto del book" class="Fotos-img" loading="lazy"></li>
             </ul>
         </section>
         <section class="Main-section Fotos">
                 <h3 class="Fotos-h3">Personajes</h3>
                 <ul class="Fotos-ul">
-                    <li class="Fotos-li "><img src="assets/personajes/1.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/personajes/2.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/personajes/4.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/personajes/5.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/personajes/10.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/personajes/11.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/personajes/8.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/personajes/7.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li Fotos-li--izq"><img src="assets/personajes/12.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li Fotos-li--der"><img src="assets/personajes/9.jpg" alt="Foto" class="Fotos-img"></li>
+                    <li class="Fotos-li "><img src="assets/personajes/1.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/personajes/2.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/personajes/4.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/personajes/5.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/personajes/10.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/personajes/11.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/personajes/8.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/personajes/7.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li Fotos-li--izq"><img src="assets/personajes/12.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li Fotos-li--der"><img src="assets/personajes/9.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
                 </ul>
         </section>
         <section class="Main-section Fotos">
                 <h3 class="Fotos-h3">Actuaciones y galas</h3>
                 <ul class="Fotos-ul">
-                    <li class="Fotos-li "><img src="assets/actuaciones/1.webp" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/actuaciones/2.webp" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/actuaciones/12.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/actuaciones/4.webp" alt="Foto" class="Fotos-img"></li>                    
-                    <li class="Fotos-li"><img src="assets/actuaciones/7.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/actuaciones/9.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/actuaciones/11.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li"><img src="assets/actuaciones/5.webp" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li Fotos-li--izq"><img src="assets/actuaciones/8.jpg" alt="Foto" class="Fotos-img"></li>
-                    <li class="Fotos-li Fotos-li--der"><img src="assets/actuaciones/6.webp" alt="Foto" class="Fotos-img"></li>
+                    <li class="Fotos-li "><img src="assets/actuaciones/1.webp" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/actuaciones/2.webp" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/actuaciones/12.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/actuaciones/4.webp" alt="Foto" class="Fotos-img" loading="lazy"></li>                    
+                    <li class="Fotos-li"><img src="assets/actuaciones/7.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/actuaciones/9.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/actuaciones/11.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li"><img src="assets/actuaciones/5.webp" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li Fotos-li--izq"><img src="assets/actuaciones/8.jpg" alt="Foto" class="Fotos-img" loading="lazy"></li>
+                    <li class="Fotos-li Fotos-li--der"><img src="assets/actuaciones/6.webp" alt="Foto" class="Fotos-img" loading="lazy"></li>
                 </ul>
         </section>
     </main>
@@ -120,6 +119,7 @@
             Copyright Sara Buenavida. Todos los derechos reservados. Web creada por Sean Fernandez
         </span>
     </footer>
+    <!-- Aqui va el lightbox que luego funcionará mediante JS -->
     <div class="Lightbox">
         <button class="Lightbox-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Lightbox-svg" viewBox="0 0 16 16">
