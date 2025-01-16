@@ -65,7 +65,8 @@ h1 , h2 , h3 , h4 , h5 , h6{
 /* Añado la imagen del fondo  para que esté siempre en la esquina*/
 .Fondo-img{
     width: 100%;
-    max-width: 50rem;
+    height: 100vh;
+    max-width: 60rem;
     object-fit: cover;
     position: relative;
     opacity: 0.2;
@@ -125,7 +126,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     display: none;
 }
 .Main{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -212,6 +213,13 @@ h1 , h2 , h3 , h4 , h5 , h6{
     font-size: .7em;
     padding: .1875rem;
     z-index: -1;
+}
+@media (min-width:1200px) {
+    .Fondo-img{
+        height: 100vh;
+        max-width: 40vw;
+    }
+    
 }
 /* Aqui va el responsive para tablets o portatiles, */
 @media (max-width:900px){

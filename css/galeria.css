@@ -134,7 +134,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
 }
 .Main-section{
     width: 90%;
-    margin: .625rem auto;
+    margin: 1rem auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -142,15 +142,15 @@ h1 , h2 , h3 , h4 , h5 , h6{
     gap: .625rem;
 }
 .Fotos-h3{
+    margin: .625rem auto;
     font-size: 1.5em;
     font-weight: 300;
 }
 /* Creo un grid donde dos fotografias ocupan un espacio doble para aportar dinamismo a la web */
 .Fotos-ul{
-    padding: .625rem;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 12.5rem;
+    grid-auto-rows: 15rem;
     gap: .625rem;
 }
 .Fotos-li{

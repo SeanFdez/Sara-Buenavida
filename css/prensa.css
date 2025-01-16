@@ -55,7 +55,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
 }
 .Fondo-img{
     width: 100%;
-    max-width: 800px;
+    max-width: 50rem;
     object-fit: cover;
     opacity: 0.2;
     display: none;
@@ -67,8 +67,8 @@ h1 , h2 , h3 , h4 , h5 , h6{
     left: 0;
 }
 .Header-wrap{
-    padding:25px;
-    height: 90px;
+    padding:1.5625rem;
+    height: 5.625rem;
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
@@ -76,7 +76,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     align-items: center;
 }
 .Logo{
-    width: 150px;
+    width: 9.375rem;
 }
 .Header-ul{
     display: flex;
@@ -85,7 +85,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     align-items: center;
 }
 .Header-li{
-    padding: 15px;
+    padding: .9375rem;
     text-align: center;
     transition: all .3s ease;
     position: relative;
@@ -93,10 +93,10 @@ h1 , h2 , h3 , h4 , h5 , h6{
 .Header-li::before{
     content: "";
     width: 0%;
-    height: 2px;
+    height: .125rem;
     background-color: var(--intenso);
     position: absolute;
-    bottom: 10px;
+    bottom: .625rem;
     left: 0;
     border-radius: 15%;
 
@@ -126,45 +126,45 @@ h1 , h2 , h3 , h4 , h5 , h6{
     position: relative;
 }
 .Main-h2{
-    margin: 20px auto;
+    margin: 1.25rem auto;
     font-size: 2rem;
     font-weight: 600;
     color: var(--oscuro);
 }
 .Main-section{
     width: 90%;
-    margin: 10px auto;
+    margin: .625rem auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: .625rem;
 }
 .Prensa-h3{
     font-size: 1.5em;
     font-weight: 300;
 }
 .Prensa-article{
-    min-height: 400px;
+    min-height: 25rem;
     width: 100%;
-    max-width: 1300px;
+    max-width: 81.25rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 10px;
+    gap: 1.25rem;
+    padding: .625rem;
 }
 .Prensa-img{
     width: 60%;
-    max-width: 400px;
+    max-width: 25rem;
     object-fit: cover;
 
 }
 .Prensa-iframe{
     width: 90%;
     aspect-ratio: 16/9;
-    max-width: 480px;
+    max-width: 30rem;
 }
 
 .Prensa-wrap{
@@ -173,7 +173,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
 }
 .Prensa-h4{
     font-weight: 600;
@@ -183,10 +183,10 @@ h1 , h2 , h3 , h4 , h5 , h6{
 .Prensa-h4::after{
     content: "";
     width: 0%;
-    height: 2px;
+    height: .125rem;
     background-color: var(--intenso);
     position: absolute;
-    bottom: -5px;
+    bottom: -0.3125rem;
     left: 0;
     border-radius: 15%;
 
@@ -204,7 +204,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     width: 100%;
     color: var(--blanco);
     font-size: .7em;
-    padding: 3px;
+    padding: .1875rem;
     z-index: -1;
 }
 @media (max-width:900px){
@@ -215,17 +215,17 @@ h1 , h2 , h3 , h4 , h5 , h6{
 @media (max-width:750px){
     .Header-boton{
         display: block;
-        width: 40px;
+        width: 2.5rem;
         position: relative;
     }
     .Boton-ul{
         background-color: rgba(0, 0, 0, 0.614);
         color: white;
-        width: 100px;
-        height: 0px;
+        width: 6.25rem;
+        height: 0rem;
         position: absolute;
-        top: 50px;
-        left: -50px;
+        top: 3.125rem;
+        left: -3.125rem;
         z-index: 2;
         overflow: hidden;
 
@@ -238,13 +238,13 @@ h1 , h2 , h3 , h4 , h5 , h6{
 
     }
     .Boton-ul.Activo{
-        height: 210px;
+        height: 13.125rem;
     }
     .Boton-li{
         font-family: "Bitter";
         width: 100%;
-        height: calc(210px / 5);
-        padding: 10px;
+        height: calc(13.125rem / 5);
+        padding: .625rem;
         text-align: center;
 
         transition: background-color .5s ease;
@@ -257,7 +257,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
         display: none;
     }
     .Prensa-article{
-        min-height: 200px;
+        min-height: 12.5rem;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
@@ -266,7 +266,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
         width: 100%;
     }
     .Prensa-img{
-        max-width: 200px;
+        max-width: 12.5rem;
         object-fit: cover;
     }
 }
