@@ -195,7 +195,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     transition: color .3s ease;
 }
 .Contacto-a:hover{
-    color: var(--claro);
+    color: var(--intenso);
 }
 .Contacto-insta{
     width: 50%;

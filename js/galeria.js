@@ -7,7 +7,10 @@ const cerrar        =lightbox.querySelector(`.Lightbox-button`)
 const grande        =lightbox.querySelector(`.Lightbox-img`)
 
 //Funciones
-let botonHandler = ()=> menu.classList.toggle(`Activo`)         
+//Abrir y cerrar el menu
+let botonHandler = ()=> menu.classList.toggle(`Activo`)     
+
+
 let imagenHandler = (eachimg, i)=>{                             //Cada vez que pulsamos una imagen, mostramos el lightbox añadiendo la clase Activo y hacemos que muestre la imagen en grande
     imagen[i].addEventListener(`click`,()=>{
         lightbox.classList.add(`Active`)
